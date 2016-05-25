@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9363,        236]
-NotebookOptionsPosition[      8682,        209]
-NotebookOutlinePosition[      9043,        225]
-CellTagsIndexPosition[      9000,        222]
+NotebookDataLength[      5403,        151]
+NotebookOptionsPosition[      4812,        126]
+NotebookOutlinePosition[      5173,        142]
+CellTagsIndexPosition[      5130,        139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,21 +60,16 @@ Cell[BoxData[{
      RowBox[{"{", 
       RowBox[{"n", ",", "30"}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Manipulate", "[", 
-   RowBox[{
-    RowBox[{"InterpolatingPolynomial", "[", " ", 
-     RowBox[{
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"MersennePrimeExponent", "[", "n", "]"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"n", ",", 
-          RowBox[{"30", "+", "m"}]}], "}"}]}], "]"}], ",", "x"}], "]"}], ",", 
-    
-    RowBox[{"{", 
-     RowBox[{"m", ",", "10"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<hmm.pdf\>\"", ",", 
+   RowBox[{"InterpolatingPolynomial", "[", " ", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"MersennePrimeExponent", "[", "n", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "30"}], "}"}]}], "]"}], ",", "x"}], "]"}], ",", 
+   "\"\<pdf\>\""}], "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"(*", 
    RowBox[{
@@ -97,96 +92,17 @@ Cell[BoxData[{
    3.673167925623027*^9}, {3.673167956984001*^9, 3.673168002937477*^9}, 
    3.673168053606369*^9, {3.6731684629298677`*^9, 3.673168502703476*^9}, {
    3.6731686293949547`*^9, 3.673168629485545*^9}, {3.673168679639982*^9, 
-   3.6731686936907787`*^9}, {3.6731687423775797`*^9, 3.6731688283060503`*^9}}],
+   3.6731686936907787`*^9}, {3.6731687423775797`*^9, 
+   3.6731688283060503`*^9}, {3.673176476792535*^9, 3.673176589236453*^9}}],
 
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`m$$ = 3, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`m$$], 10}}, Typeset`size$$ = {
-    1737.1000000000001`, {328., 19.93}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`m$$ = 10}, 
-      "ControllerVariables" :> {}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> InterpolatingPolynomial[
-        Table[
-         MersennePrimeExponent[$CellContext`n], {$CellContext`n, 
-          30 + $CellContext`m$$}], $CellContext`x], 
-      "Specifications" :> {{$CellContext`m$$, 10}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{1785., {213., 220.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.6719549091156282`*^9, 3.671954957182906*^9, {3.671955010378872*^9, 
-   3.671955016664895*^9}, 3.6721411180114183`*^9, 3.67214127338379*^9, {
-   3.6721420806326847`*^9, 3.672142105156139*^9}, 3.672142169598383*^9, {
-   3.6731680074209623`*^9, 3.6731680218810062`*^9}, 3.673168054777639*^9, {
-   3.673168495511569*^9, 3.6731685040937862`*^9}, 3.6731686309606857`*^9, 
-   3.673168704867961*^9, 3.6731688303719397`*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Table", "::", "iterb"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Iterator \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"n\\\", \\\",\\\", RowBox[{\\\"30\\\", \\\"+\\\", \
-RowBox[{\\\"3\\\", \\\" \\\", \\\"fadsfa\\\"}]}]}], \\\"}\\\"}]\\)\[NoBreak] \
-does not have appropriate bounds. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/iterb\\\", \
-ButtonNote -> \\\"Table::iterb\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.673173449890712*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Table", "::", "iterb"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Iterator \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"n\\\", \\\",\\\", RowBox[{\\\"30\\\", \\\"+\\\", \
-RowBox[{\\\"3\\\", \\\" \\\", \\\"fadsfa\\\"}]}]}], \\\"}\\\"}]\\)\[NoBreak] \
-does not have appropriate bounds. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/iterb\\\", \
-ButtonNote -> \\\"Table::iterb\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.673173449941744*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"InterpolatingPolynomial", "::", "list"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"List expected at position \[NoBreak]\\!\\(\\*RowBox[{\\\"1\
-\\\"}]\\)\[NoBreak] in \[NoBreak]\\!\\(\\*RowBox[{\\\"InterpolatingPolynomial\
-\\\", \\\"[\\\", RowBox[{RowBox[{\\\"Table\\\", \\\"[\\\", RowBox[{RowBox[{\\\
-\"MersennePrimeExponent\\\", \\\"[\\\", \\\"n\\\", \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"n\\\", \\\",\\\", RowBox[{\\\"30\\\", \
-\\\"+\\\", RowBox[{\\\"3\\\", \\\" \\\", \\\"fadsfa\\\"}]}]}], \\\"}\\\"}]}], \
-\\\"]\\\"}], \\\",\\\", \\\"x\\\"}], \\\"]\\\"}]\\)\[NoBreak]. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/list\\\", \
-ButtonNote -> \\\"InterpolatingPolynomial::list\\\"]\\)\"\>"}]], "Message", \
-"MSG",
- CellChangeTimes->{3.673173449997171*^9}]
+Cell[BoxData["\<\"hmm.pdf\"\>"], "Output",
+ CellChangeTimes->{3.673176566050769*^9, 3.6731766186137114`*^9}]
 }, Open  ]],
+
+Cell[BoxData[""], "Input",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.673176434970961*^9, 3.673176443484777*^9}}],
 
 Cell[CellGroupData[{
 
@@ -198,7 +114,8 @@ Cell[BoxData["\[RawEscape]"], "Output",
   3.6721411181158667`*^9, 3.672141273499627*^9, 3.672142080725336*^9, 
    3.6721421696997967`*^9, {3.673168007710429*^9, 3.6731680219125338`*^9}, 
    3.6731680548008127`*^9, {3.6731684955454817`*^9, 3.6731685041209793`*^9}, 
-   3.6731686309901867`*^9, 3.6731687048923807`*^9, 3.673168830489984*^9}]
+   3.6731686309901867`*^9, 3.6731687048923807`*^9, 3.673168830489984*^9, {
+   3.673176491498374*^9, 3.6731765662301083`*^9}, 3.673176618758272*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -226,18 +143,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 1092, 27, 125, "Input"],
 Cell[CellGroupData[{
-Cell[1675, 51, 2200, 48, 121, "Input"],
-Cell[3878, 101, 2009, 40, 483, "Output"],
-Cell[5890, 143, 603, 12, 23, "Message"],
-Cell[6496, 157, 603, 12, 23, "Message"],
-Cell[7102, 171, 922, 16, 23, "Message"]
+Cell[1675, 51, 2149, 44, 99, "Input"],
+Cell[3827, 97, 108, 1, 89, "Output"]
 }, Open  ]],
+Cell[3950, 101, 142, 3, 32, "Input"],
 Cell[CellGroupData[{
-Cell[8061, 192, 106, 1, 32, "Input"],
-Cell[8170, 195, 358, 5, 32, "Output"]
+Cell[4117, 108, 106, 1, 32, "Input"],
+Cell[4226, 111, 432, 6, 32, "Output"]
 }, Open  ]],
-Cell[8543, 203, 116, 2, 32, "Input"],
-Cell[8662, 207, 16, 0, 33, "Text"]
+Cell[4673, 120, 116, 2, 32, "Input"],
+Cell[4792, 124, 16, 0, 33, "Text"]
 }
 ]
 *)
